@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.recharts-wrapper {
+  left: -60px;
+}
+
+#txtIntructions {
+  height: 200px;
+}
+
+@media screen and (min-width: 40em) {
+  #txtIntructions {
+    height: 320px;
+  }
+}
+
+.recharts-layer path[fill='red'] {
+  stroke-width: 5;
+  stroke: red;
+}
+
+.recharts-layer path[fill='gray'] {
+  stroke-width: 5;
+  stroke: gray;
+}
+
+.MarsListItem input {
+  display: inline-block;
+  width: auto;
+}
+
+.MarsListItem__lost {
+  text-decoration: line-through;
+}
+
+.MarsList {
+  list-style: none;
+  margin-left: 0;
+}
+
+button.badge {
+  line-height: inherit;
+}
+
+.linkbutton {
+  color: #2199e8;
+  text-decoration: none;
+  line-height: inherit;
+  cursor: pointer;
+}
+.linkbutton:hover, .linkbutton:focus {
+  color: #1585cf; }
+
+#InstructionErrors {
+  margin: 0px 0 10px;
+}
