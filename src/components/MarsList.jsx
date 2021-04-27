@@ -15,7 +15,9 @@ export default function MarsList ({store,
           const style = (m.isAlive === false) ? 'MarsListItem__lost' : '';
           return <li className='MarsListItem' key={m.name}>
             <MarsListItem>
-              <span className={style}>{m.status}</span>              
+              <span className={style}>{m.status}</span>  
+              &nbsp;
+              <button title='Delete' className="alert badge" onClick={onDelete.bind(null, m.name)} >x</button>            
             </MarsListItem>
           </li>
           }

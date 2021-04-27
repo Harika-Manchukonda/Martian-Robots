@@ -68,7 +68,7 @@ export default class Instruct extends Component {
         }
       }
       catch (e) {
-        this.setState({txtInstructionErrors: 'You failed to make a martian/robot. Please check the readme.'});
+        this.setState({txtInstructionErrors: 'You failed to make a martian/robot.'});
         return null;
       }
 
