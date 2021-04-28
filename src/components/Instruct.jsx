@@ -19,14 +19,6 @@ export default class Instruct extends Component {
     };
   }
 
-  /*
-   * Set state with the instruction value so we can use it
-   * to update a couple UI elements.
-   * Since this is just 'component state', we don't need it to be persisted
-   * and it doesn't need to be managed at app level.
-   * @txtInstructions: set by #txtIntructions
-   *
-   */
   handleInstructionChange = (event) => {
     this.setState({txtInstructions: event.target.value});
   }

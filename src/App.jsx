@@ -9,12 +9,6 @@ import { bounds, lostList } from './config';
 class App extends Component {
   constructor(props) {
     super(props);
-
-    /**
-     * Control state: http://jamesknelson.com/5-types-react-application-state/
-     * @filterMode: Set by FilterButtons Component
-     * to define how the store state is filtered
-     */
     this.state = {filterMode: 'A'};
   }
 
@@ -115,10 +109,6 @@ class App extends Component {
   }
 }
 
-/*
- * Reference
- * http://survivejs.com/react/implementing-kanban/react-and-flux/#setting-up-connect-
- */
 export default connect(({store}) => ({
   store
 }), {

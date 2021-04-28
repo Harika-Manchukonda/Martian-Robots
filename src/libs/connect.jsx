@@ -11,14 +11,6 @@ export default(state, actions) => {
   );
 }
 
-/*
- * Reference
- * Connect to Alt through context. This hasn't been optimized
- * at all. If Alt store changes, it will force render.
- * See *AltContainer* and *connect-alt* for optimized solutions.
- * 
- * http://survivejs.com/react/implementing-kanban/react-and-flux/#understanding-connect-
- */
 function connect(state =() => {}, actions = {}, target) {
   class Connect extends Component {
     componentDidMount() {

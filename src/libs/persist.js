@@ -1,8 +1,3 @@
-/*
- * Reference
- * http://survivejs.com/react/implementing-kanban/implementing-persistency/
- * http://alt.js.org/docs/stores/
- */
 export default function(alt, storage, storageName) {
   try {
     alt.bootstrap(storage.get(storageName));

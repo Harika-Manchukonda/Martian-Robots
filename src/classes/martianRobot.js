@@ -31,15 +31,6 @@ export default class MartianRobot extends Martian {
     this._isAlive = true;
 
     /**
-     * Private methods via WeakMaps:
-     * http://exploringjs.com/es6/ch_classes.html#_private-data-via-weakmaps
-     *
-     * I wanted utility/helper functions. By definition I don't want these to show up
-     * as a robot method. At first I thought, utility module/class thingermabob i.e. robotHelpers.js.
-     * But that seemed to depart from "encapsulation" and the "single responsibility principle"; also the internets says thats a anti-pattern/code smell
-     * This method works well, but the internets also says its a bit of a memory hog.
-     * Its making each instantiation more expensive;
-     * in my head these helpers should only exist once and be called on-demand. *shrugs*
      *
      * @param {number} tempPos: position to move to if valid
      * @param {string} axis: x or y axis to move along
