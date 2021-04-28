@@ -8,11 +8,7 @@
 const _points = new WeakMap();
 
 export default class CardinalPoints {
-  constructor() {
-    /*
-     * Private data via WeakMaps:
-     * http://exploringjs.com/es6/ch_classes.html#_private-data-via-weakmaps
-     */
+  constructor() {    
     _points.set(this, new Map([['N', 0], ['E', 90], ['S', 180], ['W', 270]]));
   }
 

@@ -2,11 +2,6 @@
 
 import MarsActions from '../actions/MarsActions';
 
-/*
- * Reference
- * http://survivejs.com/react/implementing-kanban/implementing-store-and-actions/#connecting-noteactions-with-notestore-
- * http://alt.js.org/docs/createStore/
- */
 export default class MarsStore {
   constructor() {
 
