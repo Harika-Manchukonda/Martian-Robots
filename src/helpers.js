@@ -37,45 +37,6 @@ export function isPosSafe(pos, posBounds) {
   return true;
 }
 
-const emoji = new Map();
-emoji.set('LOST', ['🆘', ':sos:']);
-emoji.set('N', ['⬆️', ':arrow_up:']);
-emoji.set('S', ['⬇️', ':arrow_down:']);
-emoji.set('E', ['➡️', ':arrow_right:']);
-emoji.set('W', ['⬅️', ':arrow_left:']);
-emoji.set('Martian', ['👾', ':space_invader:']);
-emoji.set('Robot', ['🤖', ':robot_face:']);
-
-/*
- * matcher for str.replace
- */
-export function strToEmoji(match) {
-  return emoji.get(match)[0];
-}
-
-/**
- * Get emoji representation of being status
- * @param   {string} being status
- * @returns {string} transformed string
- */
-export function beingAsEmoji(str) {
-  const regex = /N|S|E|W|(\bLOST\b)|(\bMartian\b)|(\bRobot\b)/g;
-  return `${str.replace(regex, strToEmoji)}`;
-}
-
-export const demoInstructions = `5 3
-1 1 E
-RFRFRFRF
-
-3 2 N
-FRRFLLFFRRFLL
-
-0 3 W
-LLFFFLFLFL
-
-3 2 N M
-FRRFLLFFRRFLLFFF`;
-
 export function storageAvailable(type) {
 	try {
 		var storage = window[type],
