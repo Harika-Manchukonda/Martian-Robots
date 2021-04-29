@@ -45,8 +45,8 @@ export default class Instruct extends Component {
           currentInstructionSet.shift(); // after we get the bounds delete its element from the instruction array.
         }
       }
-
-      const [martianStr, instructionsStr] = currentInstructionSet;
+      const instructionsStr = currentInstructionSet[currentInstructionSet.length-2];
+      const martianStr = currentInstructionSet[currentInstructionSet.length-3];      
       const [x, y, o, type = 'R'] = martianStr.trim().split(' ');
       let tempMartian;
 
